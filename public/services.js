@@ -22,27 +22,27 @@ angular.module('myApp.services', []).
                         };
               return $http(req); 
     }
-    ergastAPI.getBlog = function(id) {
+    ergastAPI.getAd = function(id) {
       console.log("yeh id hai!",id);
                       return $http({
                         method: 'GET', 
-                        url: '/blogs/'+id
+                        url: '/ads/'+id
                       });
     }
-    ergastAPI.savePost=function(abc)
+    ergastAPI.saveAd=function(abc)
     {
       var req={
         method:'POST',
-        url:'/newBlog',
+        url:'/ad',
         data:abc
       };
       return $http(req);
     }
    
-     ergastAPI.getBlogs = function() {
+     ergastAPI.getAds = function() {
       return $http({
         method: 'GET', 
-        url: '/blogs'
+        url: '/ads'
       });
     }
 

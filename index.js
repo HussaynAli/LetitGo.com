@@ -5,10 +5,14 @@ var express = require('express')
 
 var port = process.env.PORT || 3030;
 
+const DB_COLLECTION={
+  ADS:'ads'
+}
 var dburl ;
 var crypto = require("crypto");
 
-  dburl = "mz:mz123@ds057934.mongolab.com:57934/letitgo";
+  // dburl = "mz:mz123@ds057934.mongolab.com:57934/letitgo";
+  dburl = "mongodb://localhost:27017/letitgo";
 
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -48,8 +52,8 @@ collection.findOne({email:username},{},function(e,docs){
 }
 
 
-function findforBlogs(res){
-  var collect=db.get("blogs");
+function getAllAds(res){
+  var collect=db.get("ads");
   collect.find({},{},function(e,docs){
     console.log("Blogs",docs);
     if(docs)
@@ -64,8 +68,8 @@ function findforBlogs(res){
 
 }
 
-function findBlog(res,ind){
-  var collect=db.get("blogs");
+function findAd(res,ind){
+  var collect=db.get("ads");
   console.log("ind ko check kr rha !",ind);
   collect.findOne({_id:ind},{},function(e,docs){
     console.log("Blogs",docs);
@@ -205,19 +209,19 @@ app.get('/sent', ensureAuthenticated, function(req, res){
 });
 
 
-app.get('/blogs', function(req, res){
-  var obj=findforBlogs(res);
+app.get('/ads', function(req, res){
+  var obj=getAllAds(res);
   console.log("checking object",obj);
 });
 
-app.get('/blogs/*', ensureAuthenticated, function(req, res){
+app.get('/ads/*', ensureAuthenticated, function(req, res){
 
   console.log("quer id",req.params[0]);
   var abc=req.params[0];
 
   if(abc)
   {
-    var obj=findBlog(res,req.params[0]);
+    var obj=findAd(res,req.params[0]);
   }
   else {
   res.send({error:true})
@@ -310,7 +314,7 @@ app.post('/register', function (req, res) {
 * Now close this file and go play with something else.
 */
 
-app.post('/newBlog',ensureAuthenticated, function(req,res){
+app.post('/ad',ensureAuthenticated, function(req,res){
 var collection = req.db.get("blogs");
         
       

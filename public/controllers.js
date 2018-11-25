@@ -56,8 +56,6 @@ app.controller("loginUser",function($scope,ergastAPIservice,$routeParams,$locati
 app.controller("publishAd",function($scope,ergastAPIservice,$routeParams,$location)
 {
 
-
-
     $scope.carvantroller=false;
     $scope.motorbike=true;
     $scope.clothesfootwearaccessorieswatches=true;
