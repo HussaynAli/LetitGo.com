@@ -1,92 +1,35 @@
 <div id="mainBody">
-	<div class="container">
-	<div class="row">
-<!-- Sidebar ================================================== -->
+     <div class="container">
+          <div class="row">
+               <!-- Sidebar ================================================== -->
 
 
 
 
 
-<!-- Sidebar ================================================== -->
-	<div id="sidebar" class="span3">
-          <!--<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="themes/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>-->
-          <ul id="sideManu" class="nav nav-tabs nav-stacked">
-          <label>Select the category please</label>
-               <li class="subMenu open"><a> Vehicles</a>
-                    <ul>
-                    <li><a <class="active" href="products.html <!--cat1=1--> "><i class="icon-chevron-right"></i>Cars </a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Motor Bikes</a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Vans </a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Trollers</a></li>
+               <!-- Sidebar ================================================== -->
+               <div my-sidebar></div>
+               <ng-include src="partials/sidebar.html"></ng-include>
+               <!-- <div ng-include="partials/sidebar.html"></div> -->
+               <br />
+               <!-- Sidebar end=============================================== -->
+
+
+
+
+
+
+
+
+               <!-- Sidebar end=============================================== -->
+               <div class="span9" style="margin-top:325px;">
+                    <ul class="breadcrumb" style="margin:-345px 0px 20px">
+                         <li><a href="index.php">Home</a> <span class="divider">/</span></li>
+                         <li class="active">Registration</li>
                     </ul>
-               </li>
-               <li class="subMenu"><a> Fashion & Beauty</a>
-               <ul style="display:none">
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Clothes </a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Foot Wear </a></li>                                                            
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Accessories</a></li>                                                           
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Watches</a></li>                                                          
-                                                                             
-               </ul>
-               </li>
-               <li class="subMenu"><a>Electronic And Computers</a>
-                    <ul style="display:none">
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Computers & Laptops  </a></li>
-					<li><a ng-href="products"><i class="icon-chevron-right"></i>Cameras </a></li>    
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Videos Games & Consoles</a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>TV-Video-Audio</a></li>                                                        
-                                                                  
-                                                                                
-               </ul>
-               </li>
-               <li class="subMenu"><a>Mobiles & Tablets </a>
-                   <ul style="display:none">
-                   <li><a ng-href="products"><i class="icon-chevron-right"></i>Mobile Phones </a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Tablets </a></li>                                                         
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Accessories</a></li>    
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Gadgets</a></li>
-               </ul>
-               </li>
-               <li class="subMenu"><a>Home & Furniture</a>
-                    <ul style="display:none">
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Furniture  </a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Fridge-AC-Washing Machine</a></li>     
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Home & Kitchen Appliances</a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Other Household Items</a></li>                                                           
-               </ul>
-               </li>
-               <li class="subMenu"><a>Real State</a>
-                    <ul style="display:none">
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Houses </a></li>
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Appartments </a></li>                                                          
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Lands & Plots</a></li>  
-                    <li><a ng-href="products"><i class="icon-chevron-right"></i>Shop-Offices</a></li>
-                                                                                
-               </ul>
-               </li>
-                    
-               </ul>
-          <br/>
-    </div>
-    <br/>
-	<!-- Sidebar end=============================================== -->
-
-
-
-
-
-
-
-
-<!-- Sidebar end=============================================== -->
-	<div class="span9" style="margin-top:325px;">
-    <ul class="breadcrumb" style="margin:-345px 0px 20px">	
-		<li><a href="index.php">Home</a> <span class="divider">/</span></li>
-		<li class="active">Registration</li>
-    </ul>
-	<h3> Registration</h3>	
-	<div class="well">
-	<!--
+                    <h3> Registration</h3>
+                    <div class="well">
+                         <!--
 	<div class="alert alert-info fade in">
 		<button type="button" class="close" data-dismiss="alert">×</button>
 		<strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
@@ -99,42 +42,43 @@
 		<button type="button" class="close" data-dismiss="alert">×</button>
 		<strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 	 </div> -->
-	<form class="form-horizontal">
-		<h4>Your personal information</h4>
-	
-		<div class="control-group">
-			<label class="control-label" for="input_name">Name <sup>*</sup></label>
-			<div class="controls">
-			  <input type="text" name ="input_name" placeholder=" Name " ng-model="name">
-			</div>
-		 </div>
-		 
-		<div class="control-group">
-		<label class="control-label" for="input_email">Email <sup>*</sup></label>
-		<div class="controls">
-		  <input type="text" name="input_email" placeholder="Email" ng-model="email">
-		</div>
-	  </div>	  
-	<div class="control-group">
-		<label class="control-label" for="input_password">Password <sup>*</sup></label>
-		<div class="controls">
-		  <input type="password" name="input_password" placeholder="Password" ng-model="password">
-		</div>
-	  </div>	  
-		
-	
-	
-	<div class="control-group">
-			<div class="controls">
-				<input type="hidden" name="email_create" value="1">
-				<input type="hidden" name="is_new_customer" value="1">
-				<input class="btn btn-large btn-success" type="submit" value="Register" ng-click="register()"/>
-			</div>
-		</div>		
-	</form>
-</div>
+                         <form class="form-horizontal">
+                              <h4>Your personal information</h4>
 
-</div>
-</div>
-</div>
+                              <div class="control-group">
+                                   <label class="control-label" for="input_name">Name <sup>*</sup></label>
+                                   <div class="controls">
+                                        <input type="text" name="input_name" placeholder=" Name " ng-model="name">
+                                   </div>
+                              </div>
+
+                              <div class="control-group">
+                                   <label class="control-label" for="input_email">Email <sup>*</sup></label>
+                                   <div class="controls">
+                                        <input type="text" name="input_email" placeholder="Email" ng-model="email">
+                                   </div>
+                              </div>
+                              <div class="control-group">
+                                   <label class="control-label" for="input_password">Password <sup>*</sup></label>
+                                   <div class="controls">
+                                        <input type="password" name="input_password" placeholder="Password" ng-model="password">
+                                   </div>
+                              </div>
+
+
+
+                              <div class="control-group">
+                                   <div class="controls">
+                                        <input type="hidden" name="email_create" value="1">
+                                        <input type="hidden" name="is_new_customer" value="1">
+                                        <input class="btn btn-large btn-success" type="submit" value="Register"
+                                             ng-click="register()" />
+                                   </div>
+                              </div>
+                         </form>
+                    </div>
+
+               </div>
+          </div>
+     </div>
 </div>
