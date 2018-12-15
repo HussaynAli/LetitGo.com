@@ -36,7 +36,8 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="themes/images/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
-	<style type="text/css" id="enject"></style>
+	<style type="text/css" id="enject">
+	</style>
 </head>
 
 <body ng-app="myApp">
@@ -46,13 +47,13 @@
 				<div class="span6">Welcome!<strong> User</strong></div>
 				<!--<div class="span6">
 	<div class="pull-right">
-		<a href="product_summary.php"><span class="">Fr</span></a>
-		<a href="product_summary.php"><span class="">Es</span></a>
+		<a href="#/home" ><span class="">Fr</span></a>
+		<a href="#/home" ><span class="">Es</span></a>
 		<span class="btn btn-mini">En</span>
-		<a href="product_summary.php"><span>&pound;</span></a>
+		<a href="#/home" ><span>&pound;</span></a>
 		<span class="btn btn-mini">$155.00</span>
-		<a href="product_summary.php"><span class="">$</span></a>
-		<a href="product_summary.php"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> [ 3 ] Itemes in your cart </span> </a> -->
+		<a href="#/home" ><span class="">$</span></a>
+		<a href="#/home" ><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> [ 3 ] Itemes in your cart </span> </a> -->
 			</div>
 		</div>
 	</div>
@@ -65,7 +66,7 @@
 		</a>
 		<div class="navbar-inner">
 			<a class="brand" ng-href="/#/home"><img id="logo-image" src="img/sitelogo.png" alt="findAd" /></a>
-			<form class="form-inline navbar-search" method="post" action="products.php">
+			<form class="form-inline navbar-search" method="post" action="#/home" >
 
 				<input id="srchFld" class="srchTxt" type="text" />
 				<select class="srchTxt">
@@ -109,24 +110,24 @@
 			<div class="row">
 				<div class="span3">
 					<h5>ACCOUNT</h5>
-					<a href="login_1.php">YOUR ACCOUNT</a>
+					<a href="#/home" >YOUR ACCOUNT</a>
 
 				</div>
 				<div class="span3">
 					<h5>INFORMATION</h5>
-					<a href="contact.php">CONTACT</a>
-					<a href="register.php">REGISTRATION</a>
-					<a href="legal_notice.php">LEGAL NOTICE</a>
-					<a href="tac.php">TERMS AND CONDITIONS</a>
-					<a href="faq.php">FAQ</a>
+					<a href="#/home" >CONTACT</a>
+					<a href="#/home" >REGISTRATION</a>
+					<a href="#/home" >LEGAL NOTICE</a>
+					<a href="#/home" >TERMS AND CONDITIONS</a>
+					<a href="#/home" >FAQ</a>
 				</div>
 				<!--	<div class="span3">
 				<h5>OUR OFFERS</h5>
-				<a href="#">NEW PRODUCTS</a> 
-				<a href="#">TOP SELLERS</a>  
-				<a href="special_offer.php">SPECIAL OFFERS</a>  
-				<a href="#">MANUFACTURERS</a> 
-				<a href="#">SUPPLIERS</a> 
+				<a href="#/home" >NEW PRODUCTS</a> 
+				<a href="#/home" >TOP SELLERS</a>  
+				<a href="#/home" >SPECIAL OFFERS</a>  
+				<a href="#/home" >MANUFACTURERS</a> 
+				<a href="#/home" >SUPPLIERS</a> 
 			 </div>
 			 -->
 				<div id="socialMedia" class="span3 pull-right">
@@ -138,7 +139,7 @@
 					<a href="https://ytpak.com/"><img width="60" height="60" src="themes/images/youtube.png" title="youtube" alt="youtube" /></a>
 				</div>
 			</div>
-			<p class="pull-right">&copy; Bootshop</p>
+			<!-- <p class="pull-right">&copy; Bootshop</p> -->
 		</div><!-- Container End -->
 	</div>
 	<!-- Placed at the end of the document so the pages load faster ============================================= -->

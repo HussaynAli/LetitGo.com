@@ -129,3 +129,68 @@
 .thumbnail > img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/cover.jpeg");
+    
+    /* Set a specific height */
+    height: 50%;
+    
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    
+    /* Place text in the middle of the image */
+    .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    }
+
+
+    /*! suit-flex-embed v1.4.0 | MIT License | github.com/suitcss */
+
+.FlexEmbed {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .FlexEmbed:before {
+    content: "";
+    display: block;
+    width: 100%;
+  }
+  
+  .FlexEmbed--3by1:before {
+    padding-bottom: 33.33333%;
+  }
+  
+  .FlexEmbed--2by1:before {
+    padding-bottom: 50%;
+  }
+  
+  .FlexEmbed--16by9:before {
+    padding-bottom: 56.25%;
+  }
+  
+  .FlexEmbed--4by3:before {
+    padding-bottom: 75%;
+  }
+  
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 1em;
+    max-height: 600px;
+    max-width: 600px;
+  }
